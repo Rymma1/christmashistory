@@ -1,0 +1,74 @@
+15:18:02 DEBUG Selenium Manager binary found at: C:\Users\Rymma\PycharmProjects\pythonProject\pythonProject1\venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+15:18:02 DEBUG Executing process: C:\Users\Rymma\PycharmProjects\pythonProject\pythonProject1\venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --output json
+15:18:03 DEBUG chromedriver not found in PATH
+15:18:03 DEBUG chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+15:18:03 DEBUG Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
+15:18:03 DEBUG Output: "\r\r\n\r\r\nVersion=119.0.6045.124\r\r\n\r\r\n\r\r\n\r"
+15:18:03 DEBUG Detected browser: chrome 119.0.6045.124
+15:18:03 DEBUG Required driver: chromedriver 119.0.6045.105
+15:18:03 DEBUG chromedriver 119.0.6045.105 already in the cache
+15:18:03 DEBUG Driver path: C:\Users\Rymma\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe
+15:18:03 DEBUG Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe
+15:18:03 DEBUG Using driver at: C:\Users\Rymma\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe
+15:18:03 DEBUG Started executable: `C:\Users\Rymma\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe` in a child process with pid: 12904
+15:18:04 DEBUG POST http://localhost:64582/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"extensions": [], "binary": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe", "args": ["--start-maximized"]}}}}
+15:18:04 DEBUG Starting new HTTP connection (1): localhost:64582
+15:18:06 DEBUG http://localhost:64582 "POST /session HTTP/1.1" 200 0
+15:18:06 DEBUG Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"119.0.6045.124","chrome":{"chromedriverVersion":"119.0.6045.105 (38c72552c5e15ba9b3117c0967a0fd105072d7c6-refs/branch-heads/6045@{#1103})","userDataDir":"C:\\Users\\Rymma\\AppData\\Local\\Temp\\scoped_dir12904_1746184184"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:64590"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"e04e0fcf75902bc2e3f7b52da4258b11"}} | headers=HTTPHeaderDict({'Content-Length': '884', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+15:18:06 DEBUG Finished Request
+15:18:06 DEBUG POST http://localhost:64582/session/e04e0fcf75902bc2e3f7b52da4258b11/timeouts {"implicit": 10000}
+15:18:06 DEBUG http://localhost:64582 "POST /session/e04e0fcf75902bc2e3f7b52da4258b11/timeouts HTTP/1.1" 200 0
+15:18:06 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+15:18:06 DEBUG Finished Request
+15:18:06 DEBUG POST http://localhost:64582/session/e04e0fcf75902bc2e3f7b52da4258b11/url {"url": "https://www.history.com/topics/christmas/history-of-christmas"}
+15:18:06 DEBUG http://localhost:64582 "POST /session/e04e0fcf75902bc2e3f7b52da4258b11/url HTTP/1.1" 200 0
+15:18:06 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+15:18:06 DEBUG Finished Request
+15:18:06 DEBUG POST http://localhost:64582/session/e04e0fcf75902bc2e3f7b52da4258b11/element {"using": "link text", "value": "How Did Christmas Start?"}
+15:18:10 DEBUG http://localhost:64582 "POST /session/e04e0fcf75902bc2e3f7b52da4258b11/element HTTP/1.1" 200 0
+15:18:10 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"66B2E3F10DA10CF2F0423718631521FC_element_43"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+15:18:10 DEBUG Finished Request
+15:18:10 DEBUG POST http://localhost:64582/session/e04e0fcf75902bc2e3f7b52da4258b11/execute/sync {"script": "arguments[0].scrollIntoView();", "args": [{"element-6066-11e4-a52e-4f735466cecf": "66B2E3F10DA10CF2F0423718631521FC_element_43"}]}
+15:18:10 DEBUG http://localhost:64582 "POST /session/e04e0fcf75902bc2e3f7b52da4258b11/execute/sync HTTP/1.1" 200 0
+15:18:10 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+15:18:10 DEBUG Finished Request
+15:18:10 DEBUG POST http://localhost:64582/session/e04e0fcf75902bc2e3f7b52da4258b11/element/66B2E3F10DA10CF2F0423718631521FC_element_43/click {}
+15:18:13 DEBUG http://localhost:64582 "POST /session/e04e0fcf75902bc2e3f7b52da4258b11/element/66B2E3F10DA10CF2F0423718631521FC_element_43/click HTTP/1.1" 200 0
+15:18:13 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+15:18:13 DEBUG Finished Request
+15:18:13 DEBUG POST http://localhost:64582/session/e04e0fcf75902bc2e3f7b52da4258b11/element {"using": "css selector", "value": "[id=\"how-did-christmas-start\"]"}
+15:18:13 DEBUG http://localhost:64582 "POST /session/e04e0fcf75902bc2e3f7b52da4258b11/element HTTP/1.1" 200 0
+15:18:13 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"66B2E3F10DA10CF2F0423718631521FC_element_46"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+15:18:13 DEBUG Finished Request
+15:18:13 DEBUG GET http://localhost:64582/session/e04e0fcf75902bc2e3f7b52da4258b11/element/66B2E3F10DA10CF2F0423718631521FC_element_46/text {}
+15:18:13 DEBUG http://localhost:64582 "GET /session/e04e0fcf75902bc2e3f7b52da4258b11/element/66B2E3F10DA10CF2F0423718631521FC_element_46/text HTTP/1.1" 200 0
+15:18:13 DEBUG Remote response: status=200 | data={"value":"How Did Christmas Start?"} | headers=HTTPHeaderDict({'Content-Length': '36', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+15:18:13 DEBUG Finished Request
+15:18:13 DEBUG POST http://localhost:64582/session/e04e0fcf75902bc2e3f7b52da4258b11/back {}
+15:18:13 DEBUG http://localhost:64582 "POST /session/e04e0fcf75902bc2e3f7b52da4258b11/back HTTP/1.1" 200 0
+15:18:13 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+15:18:13 DEBUG Finished Request
+15:18:13 DEBUG POST http://localhost:64582/session/e04e0fcf75902bc2e3f7b52da4258b11/element {"using": "link text", "value": "Saturnalia and Christmas"}
+15:18:13 DEBUG http://localhost:64582 "POST /session/e04e0fcf75902bc2e3f7b52da4258b11/element HTTP/1.1" 200 0
+15:18:13 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"66B2E3F10DA10CF2F0423718631521FC_element_47"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+15:18:13 DEBUG Finished Request
+15:18:13 DEBUG POST http://localhost:64582/session/e04e0fcf75902bc2e3f7b52da4258b11/execute/sync {"script": "arguments[0].scrollIntoView();", "args": [{"element-6066-11e4-a52e-4f735466cecf": "66B2E3F10DA10CF2F0423718631521FC_element_47"}]}
+15:18:13 DEBUG http://localhost:64582 "POST /session/e04e0fcf75902bc2e3f7b52da4258b11/execute/sync HTTP/1.1" 200 0
+15:18:13 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+15:18:13 DEBUG Finished Request
+15:18:13 DEBUG POST http://localhost:64582/session/e04e0fcf75902bc2e3f7b52da4258b11/element/66B2E3F10DA10CF2F0423718631521FC_element_47/click {}
+15:18:13 DEBUG http://localhost:64582 "POST /session/e04e0fcf75902bc2e3f7b52da4258b11/element/66B2E3F10DA10CF2F0423718631521FC_element_47/click HTTP/1.1" 200 0
+15:18:13 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+15:18:13 DEBUG Finished Request
+15:18:13 DEBUG POST http://localhost:64582/session/e04e0fcf75902bc2e3f7b52da4258b11/element {"using": "css selector", "value": "[id=\"saturnalia-and-christmas\"]"}
+15:18:13 DEBUG http://localhost:64582 "POST /session/e04e0fcf75902bc2e3f7b52da4258b11/element HTTP/1.1" 200 0
+15:18:13 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"66B2E3F10DA10CF2F0423718631521FC_element_49"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+15:18:13 DEBUG Finished Request
+15:18:13 DEBUG GET http://localhost:64582/session/e04e0fcf75902bc2e3f7b52da4258b11/element/66B2E3F10DA10CF2F0423718631521FC_element_49/text {}
+15:18:13 DEBUG http://localhost:64582 "GET /session/e04e0fcf75902bc2e3f7b52da4258b11/element/66B2E3F10DA10CF2F0423718631521FC_element_49/text HTTP/1.1" 200 0
+15:18:13 DEBUG Remote response: status=200 | data={"value":"Saturnalia and Christmas "} | headers=HTTPHeaderDict({'Content-Length': '37', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+15:18:13 DEBUG Finished Request
+15:18:13 DEBUG DELETE http://localhost:64582/session/e04e0fcf75902bc2e3f7b52da4258b11 {}
+15:18:14 DEBUG http://localhost:64582 "DELETE /session/e04e0fcf75902bc2e3f7b52da4258b11 HTTP/1.1" 200 0
+15:18:14 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+15:18:14 DEBUG Finished Request
